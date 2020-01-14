@@ -1,21 +1,21 @@
-# Phoenix::Egg common configuration
+# Egg (Linux SDK) common configuration
 
 IF (NOT EggFound)
 
   SET (	EggFound	TRUE
-	CACHE 		BOOL "Egg environment initialized"			)
+	CACHE 		BOOL "Egg (Linux SDK) environment initialized"			)
 
   SET (	EggPath		@CMAKE_INSTALL_PREFIX@
-	CACHE 		PATH "Egg installation path"				)
+	CACHE 		PATH "Egg (Linux SDK) installation path"				)
 
   SET (	EggCFlags	"@COMMON_CUSTOM_C_FLAGS@ @CXX_PIC_FLAG@ @CXX_PIE_FLAG@"
-	CACHE		PATH "Egg C Flags"					)
+	CACHE		PATH "Egg (Linux SDK) C Flags"					)
 
   SET (	EggCxxFlags	"@COMMON_CUSTOM_CXX_FLAGS@ @CXX_PIC_FLAG@ @CXX_PIE_FLAG@"
-	CACHE		PATH "Egg C++ Flags"					)
+	CACHE		PATH "Egg (Linux SDK) C++ Flags"					)
 
   SET (	EggLdFlags	"@COMMON_CUSTOM_LD_FLAGS@"
-	CACHE		PATH "Egg Linker Flags"					)
+	CACHE		PATH "Egg (Linux SDK) Linker Flags"					)
 
 ENDIF ()
 

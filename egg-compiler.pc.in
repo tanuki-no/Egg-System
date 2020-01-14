@@ -4,8 +4,8 @@ libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
 includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
 
 Name: egg-compiler
-Description: Phoenix Egg compiler configuration
+Description: Egg (Linux SDK) compiler configuration
 Version: @PROJECT_VERSION@
-URL: https://github.com/tanuki-no/librunner
+URL: https://github.com/tanuki-no/Egg-System
 Libs: -L${libdir}
 Cflags: -I${includedir} @COMMON_CUSTOM_CXX_FLAGS@ @CXX_PIC_FLAG@ @CXX_PIE_FLAG@
